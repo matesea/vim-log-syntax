@@ -10,7 +10,7 @@ if exists("b:current_syntax")
   finish
 endif
 
-syn match log_error 	'\c.*\<\(FATAL\|ERROR\|ERRORS\|FAIL\|FAILED\|FAILURE\|\<bug\>\|panic\|\<oops\>\).*'
+syn match log_error 	'\c.*\<\(FATAL\|ERROR\|ERRORS\|FAIL\|FAILED\|FAILURE\|bug\>\|panic\|oops\>\).*'
 syn match log_warning 	'\c.*\<\(WARNING\|DELETE\|DELETING\|DELETED\|RETRY\|RETRYING\|warn\|timeout\|timed out\).*'
 syn region log_string 	start=/'/ end=/'/ end=/$/ skip=/\\./
 syn region log_string 	start=/"/ end=/"/ skip=/\\./
